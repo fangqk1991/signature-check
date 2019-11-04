@@ -22,11 +22,11 @@ const sign = (method, apiPath, queryParams, bodyText) => {
 }
 
 const method = 'POST'
-const url = 'https://example.com/api/test/http/test_post_json?_expires=1572528461&_token=0d92f237ae715ad5ff78aa2e5703f486'
+const url = 'https://example.com/api/test/http/test_post_json?a=1&b=2&_expires=1572528461&_token=2c91ba8f62a235e31ca1c4cd51f001c9'
 const urlObj = urlHelper.parse(url, true)
 const apiPath = urlObj.pathname
 const queryParams = urlObj.query
-const bodyText = '{"issueId":1,"issueSummary":"this is summary"}';
+const bodyText = '1234567890';
 const verifyToken = sign(method, apiPath, queryParams, bodyText)
 console.log(`请求方式: `, method)
 console.log(`API 路径: `, apiPath)
