@@ -48,3 +48,7 @@ const sign = (method, apiPath, queryParams, bodyText) => {
 // 运行脚本
 node signature-check.js
 ```
+
+### Tips
+* 若本地无 Node 环境，可粘贴 `signature-check.js` 代码到 <https://tool.lu/coderunner/> 在线运行
+
