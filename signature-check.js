@@ -15,6 +15,7 @@ const sign = (method, apiPath, queryParams, bodyText) => {
 
   const items = []
   items.push(method)
+  items.push(apiPath)
   items.push(query)
   items.push(bodyText)
   items.push(_secret)
@@ -22,7 +23,7 @@ const sign = (method, apiPath, queryParams, bodyText) => {
 }
 
 const method = 'POST'
-const url = 'https://example.com/api/test/http/test_post_json?a=1&b=2&_expires=1572528461&_token=2c91ba8f62a235e31ca1c4cd51f001c9'
+const url = 'https://example.com/api/test/http/test_post_json?a=1&b=2&_expires=1572528461&_token=11e0dcf898d1a2ce621f1965d9c56e0c'
 const urlObj = urlHelper.parse(url, true)
 const apiPath = urlObj.pathname
 const queryParams = urlObj.query
